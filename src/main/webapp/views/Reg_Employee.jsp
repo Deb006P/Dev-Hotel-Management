@@ -175,6 +175,11 @@
                 <label for="city">City</label>
                 <input type="text" id="city" name="city" required>
             </div>
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="text" id="password" name="password" required>
+            </div>
 
             <!-- Submit Button -->
             <button type="submit" class="register-btn">Register</button> 

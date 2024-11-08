@@ -6,9 +6,9 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@EntityScan("com.main.employee_entity")
+@EntityScan("com.main.employee_entity,"+"com.main.user_entity")
 @EnableJpaRepositories("com.main.repo")
-@ComponentScan(basePackages = "com.main.controller,"+"com.main.employee_entity,"+"com.main.services")
+@ComponentScan(basePackages = "com.main.controller,"+"com.main.employee_entity,"+"com.main.services,"+"com.main.services2")
 @SpringBootApplication
 public class DevHotelManagementApplication {
 

@@ -22,4 +22,18 @@ public class EmployeeServiceImpl implements EmployeeService {
         }
     }
 
+    @Override
+    public Employee Login_emp(String email, String password) {
+        Employee emp = repo.findByEmail(email);
+            if (emp != null && emp.getPassword().equals(password)) {
+                return emp;
+            }
+            
+       return null;       
+    }
+    @Override
+    public boolean isEmailRegistered(String email) {
+        return repo.findByEmail(email) != null;
+    }
+
 }

@@ -25,6 +25,16 @@ public class Employee {
     private String gender;
     @Column
     private String city;
+    @Column
+    private String password;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public String getName() {
         return name;

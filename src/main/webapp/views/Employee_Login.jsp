@@ -152,9 +152,11 @@ nav ul li a {
     </nav>
     <div class="login-container">
         <h2>Login</h2>
-  
+    <c:if test="${not empty FailMsg}">
+        <h4 style="color: rgb(250, 82, 82);">${FailMsg}</h4>
+       </c:if>
 
-        <form action="/login" method="POST">
+        <form action="login_emp" method="post">
             <div class="form-group">
                 <label for="email">Email ID</label>
                 <input type="email" id="email" name="email" required>
